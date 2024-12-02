@@ -261,7 +261,7 @@ h2 {
 #p1 {
     color: black;
     font-weight: bolder;
-    background-image: url("/images/p1.png");
+    background-image: url("p1.png");
     background-size: 500px;
 }
 
@@ -275,7 +275,7 @@ h2 {
 #p2 {
     color: white;
     font-weight: bolder;
-    background-image: url("/images/P2.png");
+    background-image: url("P2.png");
     background-position: 0%;
     background-size: 300%;
 }
@@ -290,7 +290,7 @@ h2 {
 #p3 {
     color: white;
     font-weight: bolder;
-    background-image: url("/images/p3.png");
+    background-image: url("p3.png");
     background-position: center;
     background-size: 120%;
 }
@@ -305,7 +305,7 @@ h2 {
 #p4 {
     color: black;
     font-weight: bolder;
-    background-image: url("/images/p4.png");
+    background-image: url("p4.png");
     background-position: center;
     background-size: 120%;
 }
