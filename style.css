@@ -1,0 +1,548 @@
+* {
+    color: white;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+    box-sizing: border-boxs;
+    background-color: black;
+    scroll-behavior: smooth;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: cyan;
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+a {
+    color: cyan;
+}
+
+a:hover {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: -10px
+}
+
+.logo img{
+    width: 200px;
+    padding-right: 150px;
+    padding-top: 20px;
+    transition: smooth 2s;
+    background-color: transparent;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.nav-list li {
+    margin: 0 15px;
+    background-color: transparent;
+}
+
+.nav-list a {
+    color: cyan;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.nav-list a:hover {
+    color: white;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: cyan;
+    margin: 3px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    * {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .navbar {
+        width: 350px;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        background-color: #222222;
+        top: 100px;
+        text-align: center;
+        letter-spacing: 2px;
+        line-height: 50px;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: cyan;
+}
+
+h2 {
+    color: cyan;
+    background-color: #222222;
+    font-size: 40px;
+}
+
+.home-div img {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.up-txt {
+    text-align: center;
+}
+
+.up-txt p {
+    font-size: 20px;
+}
+
+#aft-hnf {
+    text-align: center;
+}
+
+.bsc {
+    display: inline-block;   
+    background-color:#222222;
+}
+
+.bsc p {
+    background-color:#222222;
+}
+
+.about {
+    text-align: center;
+}
+
+.abt-div {
+    background-color:#222222;
+}
+
+.abt-div h1 {
+    background-color:#222222;
+}
+
+#intro-p {
+    background-color: transparent;
+    width: 500px;
+}
+
+#intro-p p {
+    text-align: justify;
+}
+
+#bsc-img {
+    border: 5px solid cyan;
+    border-radius: 500px;
+    max-width: 100%;
+}
+
+#bsc-txt {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#bsc-txt-div {
+    background-color: #222222;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#bsc-img-div {
+    background-color: #222222;
+    display: grid;
+    max-width: 100%;
+}
+
+#bsc-divs {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+}
+
+.qual {
+    background-color: #222222;
+    text-align: center;
+    text-decoration: none;
+}
+
+.slider-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.card-slider {
+    display: inline-block;
+}
+
+.card {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    background-color: #222222;
+    color: cyan;
+    text-align: center;
+    line-height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+#p1 {
+    color: black;
+    font-weight: bolder;
+    background-image: url("p1.png");
+    background-size: 500px;
+}
+
+#p1 a {
+    background-color: transparent;
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#p2 {
+    color: white;
+    font-weight: bolder;
+    background-image: url("P2.png");
+    background-position: 0%;
+    background-size: 300%;
+}
+
+#p2 a {
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#p3 {
+    color: white;
+    font-weight: bolder;
+    background-image: url("p3.png");
+    background-position: center;
+    background-size: 120%;
+}
+
+#p3 a {
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#p4 {
+    color: black;
+    font-weight: bolder;
+    background-image: url("p4.png");
+    background-position: center;
+    background-size: 120%;
+}
+
+#p4 a {
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.card:hover {
+    transform: scale(1.05);
+    color: white;
+}
+
+.slider-container2 {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 4px, 4px;
+    width: 95%;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card-slider2 {
+    display: block;
+    background-color: #222222;
+}
+
+.card2 {
+    display: inline-block;
+    width: 1400px;
+    height: 480px;
+    margin: 10px;
+    background-color: #222222;
+    color: cyan;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 2px solid ;
+}
+
+.card2:hover {
+    color: white;
+}
+
+.card2 h3 {
+    color: cyan;
+    background-color: #222222;
+}
+
+.card2-txt {
+    width: 500px;
+    height: auto;
+    padding-top: 75px;
+    background-color: #222222;
+}
+
+.card2-txt p {
+    border-radius: 10px;
+    margin: 10%;
+    background-color: #222222;
+}
+
+.card2-img {
+    width: 100px;
+    float: right;
+    margin-right: 25%;
+    background-color: #222222;
+}
+
+.card2-img video {
+    display: flex;
+    background-color: transparent;
+    width: 300px;
+    
+}
+
+.card2-img img {
+    display: flex;
+    background-color: transparent;
+    width: 300px;
+}
+
+#game-vid, #explo-vid, #d3d-vid {
+    width: 400px;
+    height: auto;
+}
+
+#coding-vid{
+    width: 400px;
+    height: auto;
+}
+
+#write-p {
+    margin-top: -50px;
+    font-size: 18px;
+}
+
+.card2-divs {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+}
+.achievements {
+    background-color: #222222;
+}
+
+.ach-div {
+    display: flex;
+    background-color: #222222;
+}
+
+iframe {
+    width: max-content;
+    height: 430px;
+}
+
+.cnt-div {
+    display: block;
+    text-align: center;
+}
+
+.cnt-a-img {
+    width: 45px;
+    height: 45px;
+    transition: 0.05s;
+}
+
+.cnt-a-img:hover {
+    transform: scale(1.5);
+}
+
+.cont-int {
+    background-color: #222222;
+    max-height: 10000px;
+    justify-content: space-between;
+}
+
+.cont-int-in {
+    background-color: #222222;
+    padding-left: 175px;
+}
+
+.int {
+    display: inline-block;
+    background-color: #222222;
+    width: 200px;
+    transition: 0.2s;
+    border-width: 2px;
+    border: 1px solid cyan;
+    text-align: center;
+    padding: 17.5px;
+}
+
+.int:hover {
+    width: 225px;
+}
+
+.int-a p {
+    background-color: #222222;
+}
+
+.int-a h1 {
+    background-color: #222222;
+}
+
+.int-a img {
+    width: 90%;
+    height: 100%;
+    background-color: #222222;
+}
+
+.int-a {
+    background-color: transparent;
+    text-decoration: none;
+    text-align: center;
+    padding-right: 10%;
+}
+
+.tenor-gif-embed {
+    max-width: 200px;
+    display: flex;
+}
+
+@media (max-width: 768px) {
+
+    #intro-p {
+        width: 200px;
+    }
+
+    .card2 {
+        width: 250px;
+    }
+
+    .card2-img {
+        width: 100px;
+    }
+
+    .card2-img img {
+        width: 100px;
+    }
+
+    .ach-div {
+        display: block;
+    }
+
+    iframe {
+        width: min-content;
+        height: 215px;
+    }
+
+    #game-vid, #explo-vid, #d3d-vid {
+        width: 100px;
+        height: auto;
+    }
+
+    .cont-int-in {
+        padding-left: 0px;
+    }
+    
+    .int {
+        padding: 20px;
+    }
+}
+
+.footer {
+    background-color: #222222;
+    text-align: center;
+}
+
+#sign {
+    text-align: right;
+    color: cyan;
+}
